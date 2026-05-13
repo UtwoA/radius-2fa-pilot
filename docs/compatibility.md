@@ -23,6 +23,7 @@
 3. Настроить VPN-шлюз на RADIUS server.
 4. Проверить `password+OTP`.
 5. Отдельно проверить `Access-Challenge`, если продукт заявляет поддержку интерактивного challenge.
+6. Зафиксировать результат в матрице совместимости и в отдельной инструкции для продукта.
 
 Если `Access-Challenge` не поддерживается или клиент не показывает второй prompt, использовать `password+OTP`.
 
@@ -31,3 +32,5 @@
 ```powershell
 radius-totp test-radius --server RADIUS_IP --secret SHARED_SECRET --username USER --password PASSWORD --otp 123456 --challenge
 ```
+
+Дополнительные гипотезы и порядок исследования описаны в [Vendor Integration Research](vendor-research.md).
