@@ -1,0 +1,18 @@
+clients:
+  - name: local-test
+    host: 127.0.0.1
+    secret_env: RADIUS_SECRET_LOCAL
+    preferred_flow: password_plus_otp
+    description: Local test client
+
+  - name: fortigate-main
+    host: 10.10.10.5
+    secret_env: RADIUS_SECRET_FORTIGATE
+    preferred_flow: password_plus_otp
+    description: Fortigate VPN gateway
+
+  - name: openvpn-access-server
+    host: 10.10.10.8
+    secret_env: RADIUS_SECRET_OPENVPN
+    preferred_flow: access_challenge
+    description: OpenVPN Access Server, challenge support must be verified

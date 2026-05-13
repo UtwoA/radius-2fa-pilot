@@ -1,0 +1,6 @@
+clients:
+  - name: local-test
+    host: 127.0.0.1
+    secret_env: RADIUS_SECRET_LOCAL
+    preferred_flow: password_plus_otp
+    description: Local test client
