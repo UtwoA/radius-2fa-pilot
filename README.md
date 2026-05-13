@@ -52,6 +52,7 @@ Access-Accept / Access-Reject
 - [Enrollment пользователей](docs/enrollment.md)
 - [Эксплуатация](docs/operations.md)
 - [Совместимость VPN](docs/compatibility.md)
+- [Исследование vendor-интеграций](docs/vendor-research.md)
 - [Демонстрационный протокол](docs/demo-protocol.md)
 
 ## Статус
